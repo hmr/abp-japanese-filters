@@ -390,7 +390,7 @@
 &bidid=$document
 &bidType=
 &btag=$document
-&campaign=
+! Commented out by hmr &campaign=
 &campaign=$document
 &campaign=$popup
 &campaign_$document

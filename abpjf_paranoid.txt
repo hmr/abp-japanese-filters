@@ -1,11 +1,11 @@
 [Adblock Plus 2.8.2]
-! Checksum: +wO9YgtZZdl2Eh2VKTHNdA
+! Checksum: lo4XoquQLn/MKb1WTG5f5g
 ! Homepage: https://github.com/k2jp/abp-japanese-filters/
 ! Title: ABP Japanese Paranoid filters (ONLY FOR Japanese and experienced users: READ Support Policy)
 ! Expires: 6 hours
-! Version: 201707190835
+! Version: 201707310728
 !
-! Last modified: 2017-07-19 08:35 JST(UTC+0900)
+! Last modified: 2017-07-31 07:28 JST(UTC+0900)
 ! Change log: https://github.com/k2jp/abp-japanese-filters/wiki/FilterChangeLog
 ! Code license: GNU GPL v3: http://www.gnu.org/licenses/gpl.html
 ! Content license: Creative Commons BY-NC-SA 4.0 http://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -4509,8 +4509,13 @@ www.yahoo.co.jp###local
 ||men^$document
 ||men^$popup
 ! [Magnitude Exploit Kit Activity Increases Via Malvertising Attacks | Malwarebytes Unpacked](https://blog.malwarebytes.org/exploits-2/2015/11/magnitude-exploit-kit-activity-increases-via-malvertising-attacks/)
-|http:*.pw^$third-party
-|https:*.pw^$third-party
+! No longer trusted, Jul 22, 2017
+|http:*.pw^
+|http:*.pw^$document
+|http:*.pw^$popup
+|https:*.pw^
+|https:*.pw^$document
+|https:*.pw^$popup
 ! [Domains used by Numeric Tech Support Scam (I observed) · GitHub](https://gist.github.com/anonymous/546e857c5935e903da0e5bcfe5b05037), Jul 15, 2017
 ||review^
 ||review^$document
@@ -4529,9 +4534,9 @@ www.yahoo.co.jp###local
 ||win^$popup
 ! [Unconventional Malvertising Attack Uses New Tricks | Malwarebytes Unpacked](https://blog.malwarebytes.org/malvertising-2/2015/09/unconventional-malvertising-attack-uses-new-tricks/)
 ! No longer trusted, Jul 12, 2017
-||xyz^$domain=~crosslab.xyz
-||xyz^$document,domain=~crosslab.xyz
-||xyz^$popup,domain=~crosslab.xyz
+||xyz^$domain=~crosslab.xyz|~woodbook.xyz
+||xyz^$document,domain=~crosslab.xyz|~woodbook.xyz
+||xyz^$popup,domain=~crosslab.xyz|~woodbook.xyz
 ! ----- Notorious TLDs ----- END -----
 
 ! ===== Notorious CDN ===== START =====
